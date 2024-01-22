@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6380649237669701887}
   - component: {fileID: 171163976527124624}
   - component: {fileID: 8033161305590588453}
-  - component: {fileID: 6414394929046223643}
   - component: {fileID: 5312030156963891350}
+  - component: {fileID: 5030423513069987548}
   m_Layer: 0
   m_Name: Interactable
   m_TagString: Untagged
@@ -108,19 +108,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6414394929046223643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2977117825295521071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4b584e43fdf26e4b9f0e325b523aa01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionCanvas: {fileID: 5903184254200287716}
 --- !u!135 &5312030156963891350
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -142,6 +129,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.9670206
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5030423513069987548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2977117825295521071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9496e0a283994d44bb8b5dc1638c657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionCanvas: {fileID: 5903184254200287716}
 --- !u!1 &4731212421928976840
 GameObject:
   m_ObjectHideFlags: 0

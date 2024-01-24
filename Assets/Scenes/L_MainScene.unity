@@ -1019,7 +1019,7 @@ PrefabInstance:
     - target: {fileID: 516928565759660015, guid: 8ae531858ec122248a50503f061d1757,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -10.242
       objectReference: {fileID: 0}
     - target: {fileID: 516928565759660015, guid: 8ae531858ec122248a50503f061d1757,
         type: 3}
@@ -1160,7 +1160,7 @@ PrefabInstance:
     - target: {fileID: 8515848892455892209, guid: 30f3b782546bb024aab143f957b5b05a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.077
+      value: -11.464
       objectReference: {fileID: 0}
     - target: {fileID: 8515848892455892209, guid: 30f3b782546bb024aab143f957b5b05a,
         type: 3}
@@ -1626,6 +1626,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37e47e84652fbda4a9cac49faeba7b55, type: 3}
+--- !u!1001 &9069094391758198254
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.152
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782136339690809, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626550665624220449, guid: 31fda895951d2ad4ab3fc543b8e0cbad,
+        type: 3}
+      propertyPath: m_Name
+      value: Greyling_Gaia
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 31fda895951d2ad4ab3fc543b8e0cbad, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1650,3 +1718,4 @@ SceneRoots:
   - {fileID: 6442318215494458954}
   - {fileID: 3013293362068501339}
   - {fileID: 4116452951163041745}
+  - {fileID: 9069094391758198254}

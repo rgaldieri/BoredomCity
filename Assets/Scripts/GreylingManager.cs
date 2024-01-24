@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class GreylingManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool isPainted;
+    private GameObject target; //target to look at
+
     void Start()
     {
-        
+        target = GameObject.FindWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(target != null)
+        {
+            LookAtPlayer();
+        }
+    }
+
+    void LookAtPlayer()
+    {
+        transform.LookAt(target.transform);
     }
 }

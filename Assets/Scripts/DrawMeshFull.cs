@@ -21,7 +21,7 @@ public class DrawMeshFull : MonoBehaviour {
     private int lastSortingOrder;
     private Mesh mesh;
     private Vector3 lastMouseWorldPosition;
-    private float lineThickness = 0.04f;
+    private float lineThickness = 0.02f;
     private Color lineColor = UtilsClass.GetColorFromString("D00000");
 
     private void Awake() {
@@ -64,7 +64,7 @@ public class DrawMeshFull : MonoBehaviour {
 
             if (Input.GetMouseButton(0)) {
                 // Mouse Held Down
-                float minDistance = 0.02f;
+                float minDistance = 0.001f;
                 if (Vector2.Distance(lastMouseWorldPosition, mouseWorldPosition) > minDistance) {
                     // Far enough from last point
                     Vector2 forwardVector = (mouseWorldPosition - lastMouseWorldPosition).normalized;

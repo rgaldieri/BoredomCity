@@ -63,16 +63,18 @@ namespace Unity.FPS.UI
         void Update()
         {
             // Lock cursor when clicking outside of menu
-            if (!MenuRoot.activeSelf && Input.GetMouseButtonDown(0))
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
+            //if (!MenuRoot.activeSelf && Input.GetMouseButtonDown(0))
+            //{
+                // Cursor.lockState = CursorLockMode.Locked;
+                // Cursor.visible = false;
+                //GameFlowManager.setActiveState();
+            //}
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
+                GameFlowManager.setPauseState();
+                // Cursor.lockState = CursorLockMode.None;
+                // Cursor.visible = true;
             }
 
             if (Input.GetButtonDown(GameConstants.k_ButtonNamePauseMenu)
@@ -109,18 +111,19 @@ namespace Unity.FPS.UI
 
             if (MenuRoot.activeSelf)
             {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                Time.timeScale = 0f;
+                // Cursor.lockState = CursorLockMode.None;
+                // Cursor.visible = true;
+                // Time.timeScale = 0f;
+                // EventSystem.current.SetSelectedGameObject(null);
+                GameFlowManager.setPauseState();
                 AudioUtility.SetMasterVolume(VolumeWhenMenuOpen);
-
-                EventSystem.current.SetSelectedGameObject(null);
             }
             else
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-                Time.timeScale = 1f;
+                GameFlowManager.setActiveState();
+                // Cursor.lockState = CursorLockMode.Locked;
+                // Cursor.visible = false;
+                // Time.timeScale = 1f;
                 AudioUtility.SetMasterVolume(1);
             }
 

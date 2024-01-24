@@ -1,10 +1,28 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+
 
 namespace Unity.FPS.Game
 {
+    public enum GameState {
+        active,
+        pause,
+        drawing
+    }
+
     public class GameFlowManager : MonoBehaviour
     {
+        public static GameFlowManager INSTANCE { get; private set; }
+
+        [Header("Game State")] [Tooltip("Hud")]
+        public static GameObject hud;
+
+        [Header("Game State")] [Tooltip("The state of the game")]
+        public static GameState currentState;
+
+        public Camera playerCamera;
+
         [Header("Parameters")] [Tooltip("Duration of the fade-to-black at the end of the game")]
         public float EndSceneLoadDelay = 3f;
 
@@ -27,14 +45,18 @@ namespace Unity.FPS.Game
         [Header("Lose")] [Tooltip("This string has to be the name of the scene you want to load when losing")]
         public string LoseSceneName = "LoseScene";
 
-
         public bool GameIsEnding { get; private set; }
 
         float m_TimeLoadEndGameScene;
+
         string m_SceneToLoad;
 
         void Awake()
         {
+            INSTANCE = this;
+            if(playerCamera==null)
+                playerCamera = Camera.main;
+            hud = transform.Find("GameHUD").gameObject;
             EventManager.AddListener<AllObjectivesCompletedEvent>(OnAllObjectivesCompleted);
             EventManager.AddListener<PlayerDeathEvent>(OnPlayerDeath);
         }
@@ -42,7 +64,7 @@ namespace Unity.FPS.Game
         void Start()
         {
             AudioUtility.SetMasterVolume(1);
-        }
+        } 
 
         void Update()
         {
@@ -64,6 +86,42 @@ namespace Unity.FPS.Game
 
         void OnAllObjectivesCompleted(AllObjectivesCompletedEvent evt) => EndGame(true);
         void OnPlayerDeath(PlayerDeathEvent evt) => EndGame(false);
+
+        public static GameState GetGameState(){
+            return currentState;
+        }
+
+        public void disablePlayerCamera(){
+            playerCamera.enabled=false;
+        }
+
+        public void enablePlayerCamera(){
+            playerCamera.enabled=true;
+        }
+
+        public static void setDrawingState(){
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            hud.SetActive(false);
+            Time.timeScale = 0f;
+            currentState = GameState.drawing;
+        }
+
+        public static void setActiveState(){
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Time.timeScale = 1f;
+            hud.SetActive(true);
+            currentState = GameState.active;
+        }
+
+        public static void setPauseState(){
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0f;
+            EventSystem.current.SetSelectedGameObject(null);
+            currentState = GameState.pause;
+        }
 
         void EndGame(bool win)
         {

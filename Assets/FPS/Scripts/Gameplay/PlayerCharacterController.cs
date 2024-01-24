@@ -266,6 +266,8 @@ namespace Unity.FPS.Gameplay
 
         void HandleCharacterMovement()
         {
+            if(GameFlowManager.currentState!=GameState.active)
+                return;
             // horizontal character rotation
             {
                 // rotate the transform with the input speed around its local Y axis

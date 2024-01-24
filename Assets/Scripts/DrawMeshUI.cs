@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using CodeMonkey.Utils;
+using Unity.FPS.Game;
 
 public class DrawMeshUI : MonoBehaviour {
 
     public GameObject drawingContainer;
 
+    public GameObject parentPrefab;
+
     private void Awake() {
-        transform.Find("Thickness1Btn").GetComponent<Button>().onClick.AddListener(() => { SetThickness(0.2f); });
-        transform.Find("Thickness2Btn").GetComponent<Button>().onClick.AddListener(() => { SetThickness(0.6f); });
-        transform.Find("Thickness3Btn").GetComponent<Button>().onClick.AddListener(() => { SetThickness(1.0f); });
-        transform.Find("Thickness4Btn").GetComponent<Button>().onClick.AddListener(() => { SetThickness(2.0f); });
+        transform.Find("Thickness1Btn").GetComponent<Button>().onClick.AddListener(() => { SetThickness(0.01f); });
+        transform.Find("Thickness2Btn").GetComponent<Button>().onClick.AddListener(() => { SetThickness(0.02f); });
+        transform.Find("Thickness3Btn").GetComponent<Button>().onClick.AddListener(() => { SetThickness(0.04f); });
+        transform.Find("Thickness4Btn").GetComponent<Button>().onClick.AddListener(() => { SetThickness(0.08f); });
 
         transform.Find("Color1Btn").GetComponent<Button>().onClick.AddListener(() => { SetColor(UtilsClass.GetColorFromString("7F50B0")); });
         transform.Find("Color2Btn").GetComponent<Button>().onClick.AddListener(() => { SetColor(UtilsClass.GetColorFromString("39A0ED")); });
@@ -52,7 +55,12 @@ public class DrawMeshUI : MonoBehaviour {
     }
 
     private void Save(){
-
+        if(parentPrefab.activeSelf)
+            parentPrefab.SetActive(false);
+        DrawManager.deactivateDrawCanvas();
+        GameFlowManager.setActiveState();
+        DrawMeshFull.Instance.DeactivateDrawCamera();
+        DrawMeshFull.Instance.moveMesh(drawingContainer);
     }
 
     private void SetThickness(float thickness) {

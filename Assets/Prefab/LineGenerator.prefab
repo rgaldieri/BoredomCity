@@ -485,6 +485,7 @@ MonoBehaviour:
   hud: {fileID: 993384490751393733}
   linePrefab: {fileID: 1026041861281278968, guid: 5575b09e22a8f6844b1c51e7f296a7e1,
     type: 3}
+  ui: {fileID: 7603159396529893091}
   lineCamera: {fileID: 1676474901216865630}
   activeLine: {fileID: 0}
   thickness: 0.2

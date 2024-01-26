@@ -32,6 +32,8 @@ public class LineGenerator : MonoBehaviour
 
     public Color color = UtilsClass.GetColorFromString("D00000");
 
+    public float spriteYOffset = -0.3f;
+
     private void Awake()
     {
         Instance = this;
@@ -152,7 +154,8 @@ public class LineGenerator : MonoBehaviour
             {
                 Vector3 position = line.GetPosition(i);
                 Vector3 distance = position - fixedCentre;
-                line.SetPosition(i, targetCentre + distance);
+                Vector3 fixedDistance = new Vector3(distance.x, distance.y + spriteYOffset, distance.z);
+                line.SetPosition(i, targetCentre + fixedDistance);
             }
             line.alignment = LineAlignment.TransformZ;
             child.SetParent(lineParent.transform);

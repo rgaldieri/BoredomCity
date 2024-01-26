@@ -9,6 +9,8 @@ public class PaintLineInteraction : MonoBehaviour
 
     bool isInRange;
 
+    public GameObject prefab;
+
     [Tooltip("The game object that will contain the drawn mesh")]
     public GameObject drawingParent;
 
@@ -31,6 +33,7 @@ public class PaintLineInteraction : MonoBehaviour
         if(drawingParent==null)
             drawingParent = transform.gameObject;
         LineGenerator.Instance.lineParent =drawingParent;
+        LineGenerator.Instance.spritePrefab = prefab;
         LineGenerator.Instance.NewDrawing();
         GameFlowManager.setDrawingState();
         interactionCanvas.enabled=false;
@@ -54,4 +57,6 @@ public class PaintLineInteraction : MonoBehaviour
             interactionCanvas.enabled=false;
         }
     }
+
+
 }

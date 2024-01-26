@@ -14,6 +14,10 @@ public class LineGenerator : MonoBehaviour
 
     public GameObject hud;
 
+    public GameObject spritePrefab;
+
+    Vector3 oldPos = Vector3.zero;
+
     public GameObject linePrefab;
 
     public LineUI ui;
@@ -37,6 +41,8 @@ public class LineGenerator : MonoBehaviour
         ui.SetContainer(lineParent);
         hud.SetActive(true);
         lineCamera.enabled=true;
+        oldPos = spritePrefab.transform.position;
+        PrepareCamera();
         numberInLayer = 1;
     }
 
@@ -88,8 +94,21 @@ public class LineGenerator : MonoBehaviour
         Shift();
         hud.SetActive(false);
         lineCamera.enabled=false;
+        spritePrefab.transform.position = oldPos;
         GameFlowManager.INSTANCE.enablePlayerCamera();
         GameFlowManager.setActiveState();
+    }
+
+    public void PrepareCamera(){
+        Vector3 pos = lineCamera.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0f));
+        pos.z = 0f;
+        spritePrefab.transform.position = pos;
+        // MOVE SPRITE IN CENTRE OF THE SCREEN
+
+        // CHECK IF THE DRAWING HITS THE DRAWBOX
+
+        // IF IT DOES; THEN DRAW; ELSE DO NOT
+       
     }
 
     public void Shift(){

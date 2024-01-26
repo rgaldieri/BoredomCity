@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 474628948422357519}
   m_Layer: 0
   m_Name: PaintLineInteraction
-  m_TagString: Untagged
+  m_TagString: DrawArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,4 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736bce1118457ac4c821d2df928804f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  interactionCollider: {fileID: 5715618496164014530}
   drawingParent: {fileID: 5683555322726905683}

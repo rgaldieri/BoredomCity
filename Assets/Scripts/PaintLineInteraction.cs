@@ -11,6 +11,10 @@ public class PaintLineInteraction : MonoBehaviour
 
     public GameObject prefab;
 
+    public Collider boxCollider;
+
+    public Collider interactionCollider;
+
     [Tooltip("The game object that will contain the drawn mesh")]
     public GameObject drawingParent;
 
@@ -36,6 +40,7 @@ public class PaintLineInteraction : MonoBehaviour
         LineGenerator.Instance.spritePrefab = prefab;
         LineGenerator.Instance.NewDrawing();
         GameFlowManager.setDrawingState();
+        Destroy(interactionCollider);
         interactionCanvas.enabled=false;
         isDone = true;
     }

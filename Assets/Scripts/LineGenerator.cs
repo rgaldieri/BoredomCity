@@ -73,6 +73,12 @@ public class LineGenerator : MonoBehaviour
 
             Vector3 worldPosition = lineCamera.ScreenToWorldPoint(Input.mousePosition);
             worldPosition.z = 0;
+
+            //TODO
+            // CHECK IF THE DRAWING HITS THE BOX COLLIDER OF PAINTLINEINTERACTION
+
+            // IF IT DOES; THEN DRAW ON THE COLLIDER POS; ELSE DO NOT
+
             activeLine.lineRenderer.sortingOrder = numberInLayer;
             activeLine.UpdateLine(worldPosition);
         }
@@ -103,12 +109,6 @@ public class LineGenerator : MonoBehaviour
         Vector3 pos = lineCamera.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0f));
         pos.z = 0f;
         spritePrefab.transform.position = pos;
-        // MOVE SPRITE IN CENTRE OF THE SCREEN
-
-        // CHECK IF THE DRAWING HITS THE DRAWBOX
-
-        // IF IT DOES; THEN DRAW; ELSE DO NOT
-       
     }
 
     public void Shift(){

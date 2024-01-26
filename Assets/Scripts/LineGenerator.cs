@@ -66,7 +66,6 @@ public class LineGenerator : MonoBehaviour
         if(activeLine!=null){
 
             Vector3 worldPosition = lineCamera.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log(worldPosition);
             worldPosition.z = 0;
             activeLine.lineRenderer.sortingOrder = numberInLayer;
             activeLine.UpdateLine(worldPosition);

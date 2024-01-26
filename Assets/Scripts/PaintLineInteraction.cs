@@ -12,7 +12,11 @@ public class PaintLineInteraction : MonoBehaviour
     [Tooltip("The game object that will contain the drawn mesh")]
     public GameObject drawingParent;
 
-    public Canvas interactionCanvas;
+    Canvas interactionCanvas;
+
+    void Start(){
+        interactionCanvas = DrawInteractionCanvas.Instance.canvas;
+    }
 
     void FixedUpdate()
     {
@@ -29,7 +33,7 @@ public class PaintLineInteraction : MonoBehaviour
         LineGenerator.Instance.lineParent =drawingParent;
         LineGenerator.Instance.NewDrawing();
         GameFlowManager.setDrawingState();
-        interactionCanvas.gameObject.SetActive(false);
+        interactionCanvas.enabled=false;
         isDone = true;
     }
 
@@ -37,7 +41,8 @@ public class PaintLineInteraction : MonoBehaviour
 
         if(other.tag == "Player" && !isDone){
             isInRange = true;
-            interactionCanvas.gameObject.SetActive(true);
+            interactionCanvas.enabled=true;
+
         }
 
     }
@@ -46,7 +51,7 @@ public class PaintLineInteraction : MonoBehaviour
 
         if(other.tag == "Player" && !isDone){
             isInRange = false;
-            interactionCanvas.gameObject.SetActive(false);
+            interactionCanvas.enabled=false;
         }
     }
 }

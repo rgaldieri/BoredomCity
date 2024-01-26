@@ -116,7 +116,6 @@ public class Line : MonoBehaviour
         }
         
         float distance = Vector2.Distance(points.Last(), position);
-        Debug.Log(distance);
         if (distance > minDistance)
         {
             SetPoint(position);

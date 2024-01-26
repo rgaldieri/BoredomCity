@@ -24,7 +24,9 @@ namespace Unity.FPS.UI
         }
 
         void Update()
-        {
+        {  
+            if(m_PendingMessages==null)
+                return;
             foreach (var message in m_PendingMessages)
             {
                 if (Time.time - message.timestamp > message.delay)

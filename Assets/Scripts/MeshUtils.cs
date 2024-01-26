@@ -394,6 +394,7 @@ public static class MeshUtils {
     }
 
     public static void AddLinePoint(Mesh mesh, Vector3 pointB, float width) {
+        pointB = new Vector3(pointB.x, pointB.y, 0f);
         AddLinePoint(mesh, pointB, normal2D, width);
     }
 

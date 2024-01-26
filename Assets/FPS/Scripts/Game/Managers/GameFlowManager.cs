@@ -91,6 +91,10 @@ namespace Unity.FPS.Game
             return currentState;
         }
 
+        public Camera GetPlayerCamera(){
+            return playerCamera;
+        }
+
         public void disablePlayerCamera(){
             playerCamera.enabled=false;
         }

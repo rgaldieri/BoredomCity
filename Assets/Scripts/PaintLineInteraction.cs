@@ -1,31 +1,18 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.FPS.Game;
 using UnityEngine;
 
-public class PaintInteraction : MonoBehaviour
+public class PaintLineInteraction : MonoBehaviour
 {
-
     bool isDone;
 
     bool isInRange;
 
-    GameObject drawMesh;
-
     [Tooltip("The game object that will contain the drawn mesh")]
     public GameObject drawingParent;
 
-    public Sprite guideline;
-
     public Canvas interactionCanvas;
-
-    // Update is called once per frame
-
-    void Start(){
-        if(drawMesh==null)
-            drawMesh = DrawMeshFull.Instance.gameObject;
-    }
 
     void FixedUpdate()
     {
@@ -39,11 +26,10 @@ public class PaintInteraction : MonoBehaviour
     private void ShowPaint(){
         if(drawingParent==null)
             drawingParent = transform.gameObject;
-        DrawManager.activateDrawCanvas();
-        DrawMeshFull.Instance.InitializeDrawing(drawingParent);
-        interactionCanvas.gameObject.SetActive(false);
-        DrawMeshFull.Instance.ActivateDrawCamera();
+        LineGenerator.Instance.lineParent =drawingParent;
+        LineGenerator.Instance.NewDrawing();
         GameFlowManager.setDrawingState();
+        interactionCanvas.gameObject.SetActive(false);
         isDone = true;
     }
 
@@ -63,5 +49,4 @@ public class PaintInteraction : MonoBehaviour
             interactionCanvas.gameObject.SetActive(false);
         }
     }
-
 }

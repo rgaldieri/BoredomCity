@@ -1,16 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.FPS.Game;
-using Unity.Mathematics;
 using UnityEngine;
+using Unity.FPS.Game;
 
-public class GreylingManager : MonoBehaviour
+
+public class LookAtPlayer : MonoBehaviour
 {
-    public bool isPainted;
-    
     private GameObject target; //target to look at
-    public string[] dialogue;
-
+    
     void Start()
     {
         target = GameObject.FindWithTag("Player");
@@ -20,11 +17,11 @@ public class GreylingManager : MonoBehaviour
     {
         if(target != null)
         {
-            LookAtPlayer();
+            Look();
         }
     }
 
-    void LookAtPlayer()
+    void Look()
     {
         if(GameFlowManager.GetGameState() != GameState.drawing){
             Vector3 rot = Quaternion.LookRotation(transform.position - target.transform.position).eulerAngles;

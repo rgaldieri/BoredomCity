@@ -123,6 +123,7 @@ public class LineGenerator : MonoBehaviour
     {
         Close();
         Shift();
+        interactionOrigin.paintDone();
     }
 
     public void Close(){

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.FPS.Game;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PaintLineInteraction : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class PaintLineInteraction : MonoBehaviour
     public Collider boxCollider;
 
     public Collider interactionCollider;
+
+    public UnityEvent paintingDone;
 
     [Tooltip("The game object that will contain the drawn mesh")]
     public GameObject drawingParent;
@@ -54,14 +57,19 @@ public class PaintLineInteraction : MonoBehaviour
         LineGenerator.Instance.NewDrawing(this);
         GameFlowManager.setDrawingState();
         interactionCanvas.enabled=false;
+    }
+
+    public void paintDone(){
+        paintingDone.Invoke();
         isDone = true;
     }
 
     private void OnTriggerEnter(Collider other){
 
-        if(other.tag == "Player" && !isDone){
+        if(other.tag == "Player"){
             isInRange = true;
-            interactionCanvas.enabled=true;
+            if(!isDone)
+                interactionCanvas.enabled=true;
 
         }
 
@@ -69,9 +77,10 @@ public class PaintLineInteraction : MonoBehaviour
 
     private void OnTriggerExit(Collider other){
 
-        if(other.tag == "Player" && !isDone){
+        if(other.tag == "Player" ){
             isInRange = false;
-            interactionCanvas.enabled=false;
+            if(!isDone)
+                interactionCanvas.enabled=false;
         }
     }
 

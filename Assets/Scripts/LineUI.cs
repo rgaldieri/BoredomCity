@@ -24,6 +24,7 @@ public class LineUI : MonoBehaviour
         transform.Find("ResetBtn").GetComponent<Button>().onClick.AddListener(() => { ResetDrawing(); });
         transform.Find("UndoBtn").GetComponent<Button>().onClick.AddListener(() => { UndoLastDrawing(); });
         transform.Find("SaveBtn").GetComponent<Button>().onClick.AddListener(() => { Save(); });
+        transform.Find("ExitBtn").GetComponent<Button>().onClick.AddListener(() => { ExitNoSave(); });
     }
 
     public void SetContainer(GameObject container){
@@ -65,6 +66,11 @@ public class LineUI : MonoBehaviour
 
     private void SetColor(Color color) {
         LineGenerator.Instance.color= color;
+    }
+
+    private void ExitNoSave(){
+        ResetDrawing();
+        LineGenerator.Instance.CloseWithoutSaving();
     }
 
 }

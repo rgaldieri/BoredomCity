@@ -34,14 +34,17 @@ public class LineGenerator : MonoBehaviour
 
     public float spriteYOffset = -0.3f;
 
+    PaintLineInteraction interactionOrigin;
+
     private void Awake()
     {
         Instance = this;
     }
 
-    public void NewDrawing()
+    public void NewDrawing(PaintLineInteraction fromInteraction)
     {
         ui.SetContainer(lineParent);
+        interactionOrigin = fromInteraction;
         hud.SetActive(true);
         lineCamera.enabled = true;
         oldPos = spritePrefab.transform.position;
@@ -83,8 +86,6 @@ public class LineGenerator : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {   
-                Debug.Log("Hit?");
-                Debug.DrawLine(lineCamera.transform.position, hit.transform.position, Color.red, 5f);
                 if (hit.collider.gameObject.CompareTag("DrawArea"))
                 {
                     // The collider hit has the specified tag
@@ -120,12 +121,22 @@ public class LineGenerator : MonoBehaviour
 
     public void Save()
     {
-        spritePrefab.transform.position = oldPos;
+        Close();
         Shift();
+    }
+
+    public void Close(){
+        spritePrefab.transform.position = oldPos;
         hud.SetActive(false);
         lineCamera.enabled = false;
         GameFlowManager.INSTANCE.enablePlayerCamera();
         GameFlowManager.setActiveState();
+    }
+
+    public void CloseWithoutSaving(){
+        if(interactionOrigin!=null)
+            interactionOrigin.SetDrawableAgain();
+        Close();
     }
 
     public void PrepareCamera()

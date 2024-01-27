@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class PaintLineInteraction : MonoBehaviour
 {
-    bool isDone;
+    public bool isDone;
 
-    bool isInRange;
+    public bool isInRange;
+
+    bool showPaint;
 
     public GameObject prefab;
 
@@ -24,13 +26,24 @@ public class PaintLineInteraction : MonoBehaviour
         interactionCanvas = DrawInteractionCanvas.Instance.canvas;
     }
 
-    void FixedUpdate()
-    {
-        if(isInRange && !isDone){
-            if(Input.GetKeyDown(KeyCode.F)){
-                ShowPaint();
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.F)){
+            if(isInRange && !isDone){
+                showPaint = true;
             }
         }
+    }
+
+    void FixedUpdate()
+    {
+        if(showPaint && !isDone){
+            ShowPaint();
+        }
+    }
+
+    public void SetDrawableAgain(){
+        showPaint=false;
+        isDone=false;
     }
 
     private void ShowPaint(){
@@ -38,9 +51,8 @@ public class PaintLineInteraction : MonoBehaviour
             drawingParent = transform.gameObject;
         LineGenerator.Instance.lineParent =drawingParent;
         LineGenerator.Instance.spritePrefab = prefab;
-        LineGenerator.Instance.NewDrawing();
+        LineGenerator.Instance.NewDrawing(this);
         GameFlowManager.setDrawingState();
-        Destroy(interactionCollider);
         interactionCanvas.enabled=false;
         isDone = true;
     }

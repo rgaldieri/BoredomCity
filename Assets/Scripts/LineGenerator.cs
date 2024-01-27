@@ -128,11 +128,11 @@ public class LineGenerator : MonoBehaviour
     {
         Close();
         Shift();
-        drawingEnded.Invoke();
         interactionOrigin.paintDone();
     }
 
     public void Close(){
+        drawingEnded.Invoke();
         spritePrefab.transform.position = oldPos;
         hud.SetActive(false);
         lineCamera.enabled = false;

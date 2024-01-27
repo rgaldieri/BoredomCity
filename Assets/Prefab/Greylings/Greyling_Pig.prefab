@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &522741569390917056
+--- !u!1 &2391721243168878473
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,71 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5555761241101466899}
-  - component: {fileID: 5676425672035783999}
-  - component: {fileID: 6007208676233960375}
-  m_Layer: 0
-  m_Name: Greyling_Pig
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5555761241101466899
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522741569390917056}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.04, y: 2.1, z: -123.54}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1934098435153478159}
-  - {fileID: 7353020538904862603}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5676425672035783999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522741569390917056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0930a7b05d030a943bdd6a707799e3ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6007208676233960375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522741569390917056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57e5b57e2df129046a07172a45a6d919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueLines:
-  - "Why did no one buy these watermelons? I don\u2019t want to eat them all."
-  - They say that sooner or later all pigs end up in the oven.
-  interaction: {fileID: 0}
---- !u!1 &4766392709157099864
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1934098435153478159}
-  - component: {fileID: 7258537521365310589}
+  - component: {fileID: 794698426728918726}
+  - component: {fileID: 2156009142254071991}
   m_Layer: 0
   m_Name: maialex
   m_TagString: Untagged
@@ -80,28 +17,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1934098435153478159
+--- !u!4 &794698426728918726
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4766392709157099864}
+  m_GameObject: {fileID: 2391721243168878473}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.03, y: 0.02, z: -86.99}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5555761241101466899}
+  m_Father: {fileID: 7255371483657134767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7258537521365310589
+--- !u!212 &2156009142254071991
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4766392709157099864}
+  m_GameObject: {fileID: 2391721243168878473}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -147,34 +84,97 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &41651177596915713
+--- !u!1 &7239526746804206884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7255371483657134767}
+  - component: {fileID: 2842919515715391723}
+  - component: {fileID: 6189168826901540040}
+  m_Layer: 0
+  m_Name: Greyling_Pig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7255371483657134767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239526746804206884}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.87, y: 1.829, z: -212.49}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 794698426728918726}
+  - {fileID: 7529828331572115312}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2842919515715391723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239526746804206884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0930a7b05d030a943bdd6a707799e3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6189168826901540040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239526746804206884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e5b57e2df129046a07172a45a6d919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - aaaa
+  - bbbb
+  interaction: {fileID: 0}
+--- !u!1001 &1073974678498867450
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 5555761241101466899}
+    m_TransformParent: {fileID: 7255371483657134767}
     m_Modifications:
     - target: {fileID: 474628948422357519, guid: b090dc0dab0e4a4489c7319d4e692d49,
         type: 3}
       propertyPath: prefab
       value: 
-      objectReference: {fileID: 522741569390917056}
+      objectReference: {fileID: 7239526746804206884}
     - target: {fileID: 474628948422357519, guid: b090dc0dab0e4a4489c7319d4e692d49,
         type: 3}
       propertyPath: boxCollider
       value: 
-      objectReference: {fileID: 7234293831081455823}
+      objectReference: {fileID: 7642925402133665844}
     - target: {fileID: 474628948422357519, guid: b090dc0dab0e4a4489c7319d4e692d49,
         type: 3}
       propertyPath: drawingParent
       value: 
-      objectReference: {fileID: 5729365216270732229}
+      objectReference: {fileID: 4753184982420136766}
     - target: {fileID: 474628948422357519, guid: b090dc0dab0e4a4489c7319d4e692d49,
         type: 3}
       propertyPath: interactionCollider
       value: 
-      objectReference: {fileID: 7234293831081455823}
+      objectReference: {fileID: 7642925402133665844}
     - target: {fileID: 5697390844440468420, guid: b090dc0dab0e4a4489c7319d4e692d49,
         type: 3}
       propertyPath: m_Name
@@ -235,21 +235,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b090dc0dab0e4a4489c7319d4e692d49, type: 3}
---- !u!1 &5729365216270732229 stripped
+--- !u!1 &4753184982420136766 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5697390844440468420, guid: b090dc0dab0e4a4489c7319d4e692d49,
     type: 3}
-  m_PrefabInstance: {fileID: 41651177596915713}
+  m_PrefabInstance: {fileID: 1073974678498867450}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &7234293831081455823 stripped
-BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 7275185245602504910, guid: b090dc0dab0e4a4489c7319d4e692d49,
-    type: 3}
-  m_PrefabInstance: {fileID: 41651177596915713}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7353020538904862603 stripped
+--- !u!4 &7529828331572115312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7392892703567466378, guid: b090dc0dab0e4a4489c7319d4e692d49,
     type: 3}
-  m_PrefabInstance: {fileID: 41651177596915713}
+  m_PrefabInstance: {fileID: 1073974678498867450}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7642925402133665844 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 7275185245602504910, guid: b090dc0dab0e4a4489c7319d4e692d49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1073974678498867450}
   m_PrefabAsset: {fileID: 0}

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5555761241101466899}
   - component: {fileID: 5676425672035783999}
+  - component: {fileID: 6007208676233960375}
   m_Layer: 0
   m_Name: Greyling_Pig
   m_TagString: Untagged
@@ -46,8 +47,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0930a7b05d030a943bdd6a707799e3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPainted: 0
-  dialogue: []
+--- !u!114 &6007208676233960375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522741569390917056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e5b57e2df129046a07172a45a6d919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - "Why did no one buy these watermelons? I don\u2019t want to eat them all."
+  - They say that sooner or later all pigs end up in the oven.
+  interaction: {fileID: 0}
 --- !u!1 &4766392709157099864
 GameObject:
   m_ObjectHideFlags: 0

@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7364319344007881401}
   - component: {fileID: 6351097685522738822}
+  - component: {fileID: 3648571055390364251}
   m_Layer: 0
   m_Name: Greyling_Bodyguard
   m_TagString: Untagged
@@ -130,8 +131,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0930a7b05d030a943bdd6a707799e3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPainted: 0
-  dialogue: []
+--- !u!114 &3648571055390364251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9212955512717742971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e5b57e2df129046a07172a45a6d919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - "Move on, there\u2019s nothing to see and tag here!"
+  - Maybe it's time to start to draw again, just as I did when I was a child.
+  interaction: {fileID: 0}
 --- !u!1001 &6898249754168243944
 PrefabInstance:
   m_ObjectHideFlags: 0

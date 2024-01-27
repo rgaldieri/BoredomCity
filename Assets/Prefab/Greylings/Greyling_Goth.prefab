@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516928565759660015}
   - component: {fileID: -7618389026029975065}
+  - component: {fileID: 1425742397561786625}
   m_Layer: 0
   m_Name: Greyling_Goth
   m_TagString: Untagged
@@ -130,8 +131,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0930a7b05d030a943bdd6a707799e3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPainted: 0
-  dialogue: []
+--- !u!114 &1425742397561786625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3346860955020456852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e5b57e2df129046a07172a45a6d919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - I really like this bland and grey world
+  - All those colors make me want to listen to the other shades of gothic music
+  interaction: {fileID: 0}
 --- !u!1001 &378974744459104307
 PrefabInstance:
   m_ObjectHideFlags: 0

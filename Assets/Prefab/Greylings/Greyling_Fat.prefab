@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6022533648265707561}
   - component: {fileID: 8110884244316143739}
+  - component: {fileID: 5961049493916141230}
   m_Layer: 0
   m_Name: Greyling_Fat
   m_TagString: Untagged
@@ -130,8 +131,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0930a7b05d030a943bdd6a707799e3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPainted: 0
-  dialogue: []
+--- !u!114 &5961049493916141230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8987362099544253744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e5b57e2df129046a07172a45a6d919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - With this new mayor, finally Boredom City is back as nice and boring as it once
+    was
+  - Is it normal that all this change scares me so much? Shouldn't I be laughing
+    about this too?
+  interaction: {fileID: 0}
 --- !u!1001 &8999598280172337602
 PrefabInstance:
   m_ObjectHideFlags: 0

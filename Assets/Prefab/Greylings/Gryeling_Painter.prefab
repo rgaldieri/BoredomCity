@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7911575217367874662}
   - component: {fileID: 1952611679688133091}
+  - component: {fileID: 5689700784146500070}
   m_Layer: 0
   m_Name: Gryeling_Painter
   m_TagString: Untagged
@@ -130,8 +131,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0930a7b05d030a943bdd6a707799e3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPainted: 0
-  dialogue: []
+--- !u!114 &5689700784146500070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041644363227008724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e5b57e2df129046a07172a45a6d919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - No one wants a painting now that all art is AI. Go on, use my blank canvas if
+    you want.
+  - "I said my canvas, not my face! But it\u2019s okay, I like it, Picasso."
+  interaction: {fileID: 0}
 --- !u!1001 &8617886926795621735
 PrefabInstance:
   m_ObjectHideFlags: 0

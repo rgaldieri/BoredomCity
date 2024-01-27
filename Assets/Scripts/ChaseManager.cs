@@ -31,6 +31,9 @@ public class ChaseManager : MonoBehaviour
     }
     
     void FixedUpdate(){
+        if(GameFlowManager.GetGameState()==GameState.drawing){
+            return;
+        }
         if(isInSight){
             counter = chaseBufferSeconds;
             Chase();

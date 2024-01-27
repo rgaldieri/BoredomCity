@@ -4,6 +4,7 @@ using UnityEngine;
 using CodeMonkey.Utils;
 using Unity.FPS.Game;
 using UnityEngine.Diagnostics;
+using UnityEngine.Events;
 
 public class LineGenerator : MonoBehaviour
 {
@@ -34,6 +35,10 @@ public class LineGenerator : MonoBehaviour
 
     public float spriteYOffset = -0.3f;
 
+    public UnityEvent drawingStarted;
+
+    public UnityEvent drawingEnded;
+
     PaintLineInteraction interactionOrigin;
 
     private void Awake()
@@ -43,6 +48,7 @@ public class LineGenerator : MonoBehaviour
 
     public void NewDrawing(PaintLineInteraction fromInteraction)
     {
+        drawingStarted.Invoke();
         ui.SetContainer(lineParent);
         interactionOrigin = fromInteraction;
         hud.SetActive(true);
@@ -95,7 +101,6 @@ public class LineGenerator : MonoBehaviour
                 }
             }
 
-            //TODO
             // CHECK IF THE DRAWING HITS THE BOX COLLIDER OF PAINTLINEINTERACTION
 
             // IF IT DOES; THEN DRAW ON THE COLLIDER POS; ELSE DO NOT
@@ -123,6 +128,7 @@ public class LineGenerator : MonoBehaviour
     {
         Close();
         Shift();
+        drawingEnded.Invoke();
         interactionOrigin.paintDone();
     }
 

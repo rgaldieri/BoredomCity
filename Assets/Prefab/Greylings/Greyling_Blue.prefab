@@ -94,6 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 73685645194021634}
   - component: {fileID: 1622326650836642677}
+  - component: {fileID: 1470779208369148835}
+  - component: {fileID: 5967261433283004134}
+  - component: {fileID: 7306589365362845535}
   m_Layer: 0
   m_Name: Greyling_Blue
   m_TagString: Untagged
@@ -131,3 +134,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPainted: 0
   dialogue: []
+--- !u!114 &1470779208369148835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671977705101534819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91fe3ca3e797f00418ccc5b2d935f1b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSightDistance: 20
+  chaseBufferSeconds: 1
+  chaseSpeed: 7
+--- !u!65 &5967261433283004134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671977705101534819}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.7426704, z: 0.004501343}
+  m_Center: {x: 0, y: 0.2115621, z: 0.013031006}
+--- !u!54 &7306589365362845535
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671977705101534819}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

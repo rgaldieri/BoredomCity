@@ -12381,6 +12381,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: LineGenerator
       objectReference: {fileID: 0}
+    - target: {fileID: 5966465418282106520, guid: 26710bb9ae551f042b96e14a6b61186a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966465418282106520, guid: 26710bb9ae551f042b96e14a6b61186a,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 7548842404044171747, guid: 26710bb9ae551f042b96e14a6b61186a,
         type: 3}
       propertyPath: m_LocalPosition.x

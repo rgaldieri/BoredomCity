@@ -12,18 +12,16 @@ public class ChaseManager : MonoBehaviour
 
     public float chaseBufferSeconds;
 
+    public AudioSource audioSource;
+
     public float chaseSpeed;
+
+    public float maxJump;
 
     Vector3 lastSeenPosition;
 
     bool isInSight;
     float counter;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -36,15 +34,23 @@ public class ChaseManager : MonoBehaviour
         if(isInSight){
             counter = chaseBufferSeconds;
             Chase();
+            return;
         }
         if(!isInSight && counter>0){
             counter = Math.Max(0, counter -Time.fixedDeltaTime);
             Chase();
+            return;
         }
+        audioSource.Stop();
     }
 
     public void Chase(){
-        transform.position = Vector3.MoveTowards(transform.position, lastSeenPosition,Time.fixedDeltaTime *chaseSpeed);
+        audioSource.Play();
+        Vector3 origin = transform.position;
+        Vector3 movement = Vector3.MoveTowards(transform.position, lastSeenPosition,Time.fixedDeltaTime *chaseSpeed);
+        if(movement.y > origin.y)
+            movement.y = Math.Min(origin.y + maxJump, movement.y);
+        transform.position = movement;
     }
 
     public bool IsPlayerInSight()

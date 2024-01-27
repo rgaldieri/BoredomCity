@@ -267,6 +267,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -426,6 +431,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -822,6 +832,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -2714,6 +2729,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -8021,6 +8041,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -8297,6 +8322,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -8365,6 +8395,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -9523,6 +9558,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 681349793}
     m_Modifications:
+    - target: {fileID: 214031130518705998, guid: 9b6d8cb1a31f3b842b5a371c6e4fe129,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3996958732554461540, guid: 9b6d8cb1a31f3b842b5a371c6e4fe129,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10027,6 +10067,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -10339,6 +10384,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -11703,6 +11753,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -11867,6 +11922,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -15164,6 +15224,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -15384,6 +15449,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -16516,6 +16586,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -17021,6 +17096,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -19433,6 +19513,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -19676,6 +19761,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3320740354528695618, guid: dbbdef13db7158446947bfeefbe503bf,
     type: 3}
   m_PrefabInstance: {fileID: 132638651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1256884636 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5408703408531241681, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 714647381}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1261204318 stripped
 Transform:
@@ -20827,6 +20918,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -21224,6 +21320,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -21366,6 +21467,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -21514,6 +21620,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -25229,6 +25340,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -25743,6 +25859,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -25817,6 +25938,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -25885,6 +26011,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -27359,6 +27490,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name
@@ -34309,6 +34445,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1470779208369148835, guid: 6a6b14c6e75945147a43665d6c20f0ce,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1256884636}
     - target: {fileID: 1671977705101534819, guid: 6a6b14c6e75945147a43665d6c20f0ce,
         type: 3}
       propertyPath: m_Name

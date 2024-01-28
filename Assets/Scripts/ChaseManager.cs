@@ -31,6 +31,8 @@ public class ChaseManager : MonoBehaviour
     }
     
     void FixedUpdate(){
+        if(GameFlowManager.INSTANCE.invincibility)
+            return;
         if(isPlayerCatched()){
             GameFlowManager.INSTANCE.LoseGame();
         }

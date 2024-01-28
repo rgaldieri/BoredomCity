@@ -3,14 +3,27 @@ using System.Collections.Generic;
 using Unity.FPS.Game;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GreylingManager : MonoBehaviour
 {
     private GameObject target; //target to look at
 
+    public bool isPainted;
+
+    public bool paintable;
+
+    public UnityEvent isPaintDoneEvent;
+
+    private PaintLineInteraction interaction;
+
     void Start()
     {
         target = GameObject.FindWithTag("Player");
+        if(paintable){
+            interaction = transform.Find("PaintLineInteraction").GetComponent<PaintLineInteraction>();
+            interaction.paintingDone.AddListener(()=> {SetPainted();});
+        }
     }
 
     void Update()
@@ -19,6 +32,11 @@ public class GreylingManager : MonoBehaviour
         {
             LookAtPlayer();
         }
+    }
+
+    public void SetPainted(){
+        isPainted = true;
+        isPaintDoneEvent.Invoke();
     }
 
     void LookAtPlayer()

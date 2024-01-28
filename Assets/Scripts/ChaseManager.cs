@@ -16,6 +16,8 @@ public class ChaseManager : MonoBehaviour
 
     public float maxJump;
 
+    public float catchRange;
+
     Vector3 lastSeenPosition;
 
     bool isInSight;
@@ -29,6 +31,9 @@ public class ChaseManager : MonoBehaviour
     }
     
     void FixedUpdate(){
+        if(isPlayerCatched()){
+            GameFlowManager.INSTANCE.LoseGame();
+        }
         if(GameFlowManager.GetGameState()==GameState.drawing){
             return;
         }
@@ -76,6 +81,12 @@ public class ChaseManager : MonoBehaviour
 
     public void DEBUG_DrawRay(){
         Debug.DrawRay(transform.position, GetMovementDirection()*maxSightDistance, Color.red, 1f);
+    }
+
+    public bool isPlayerCatched(){
+        if(GameFlowManager.INSTANCE.invincibility)
+            return false;
+        return Vector3.Distance(transform.position, GameFlowManager.INSTANCE.playerCamera.transform.position) <= catchRange;
     }
 
 }

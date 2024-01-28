@@ -142,6 +142,7 @@ namespace Unity.FPS.UI
         void OnInvincibilityChanged(bool newValue)
         {
             m_PlayerHealth.Invincible = newValue;
+            GameFlowManager.INSTANCE.invincibility=newValue;
         }
 
         void OnFramerateCounterChanged(bool newValue)

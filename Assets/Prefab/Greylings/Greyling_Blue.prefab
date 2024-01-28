@@ -146,9 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSightDistance: 20
   chaseBufferSeconds: 1
-  audioSource: {fileID: 0}
   chaseSpeed: 7
   maxJump: 5
+  catchRange: 1
 --- !u!65 &5967261433283004134
 BoxCollider:
   m_ObjectHideFlags: 0

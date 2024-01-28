@@ -45,6 +45,8 @@ namespace Unity.FPS.Game
         [Header("Lose")] [Tooltip("This string has to be the name of the scene you want to load when losing")]
         public string LoseSceneName = "LoseScene";
 
+        public bool invincibility = false;
+
         public bool GameIsEnding { get; private set; }
 
         float m_TimeLoadEndGameScene;
@@ -101,6 +103,14 @@ namespace Unity.FPS.Game
 
         public void enablePlayerCamera(){
             playerCamera.enabled=true;
+        }
+
+        public void WinGame(){
+            Debug.Log("Win");
+        }
+
+        public void LoseGame(){
+            Debug.Log("Lost");
         }
 
         public static void setDrawingState(){

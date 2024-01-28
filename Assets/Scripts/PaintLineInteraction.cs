@@ -20,6 +20,10 @@ public class PaintLineInteraction : MonoBehaviour
 
     public UnityEvent paintingDone;
 
+    public UnityEvent playerInRange;
+
+    public UnityEvent playerOutOfRange;
+
     [Tooltip("The game object that will contain the drawn mesh")]
     public GameObject drawingParent;
 
@@ -65,20 +69,19 @@ public class PaintLineInteraction : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
-
         if(other.tag == "Player"){
             isInRange = true;
+            playerInRange.Invoke();
             if(!isDone)
                 interactionCanvas.enabled=true;
-
         }
 
     }
 
     private void OnTriggerExit(Collider other){
-
         if(other.tag == "Player" ){
             isInRange = false;
+            playerOutOfRange.Invoke();
             if(!isDone)
                 interactionCanvas.enabled=false;
         }

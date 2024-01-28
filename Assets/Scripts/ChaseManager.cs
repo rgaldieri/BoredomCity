@@ -12,8 +12,6 @@ public class ChaseManager : MonoBehaviour
 
     public float chaseBufferSeconds;
 
-    public AudioSource audioSource;
-
     public float chaseSpeed;
 
     public float maxJump;
@@ -44,11 +42,9 @@ public class ChaseManager : MonoBehaviour
             Chase();
             return;
         }
-        audioSource.Stop();
     }
 
     public void Chase(){
-        audioSource.Play();
         Vector3 origin = transform.position;
         Vector3 movement = Vector3.MoveTowards(transform.position, lastSeenPosition,Time.fixedDeltaTime *chaseSpeed);
         if(movement.y > origin.y)

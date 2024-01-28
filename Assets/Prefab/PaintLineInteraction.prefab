@@ -106,7 +106,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.8
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &474628948422357519
 MonoBehaviour:
@@ -120,7 +120,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736bce1118457ac4c821d2df928804f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDone: 0
+  isInRange: 0
   prefab: {fileID: 0}
   boxCollider: {fileID: 0}
   interactionCollider: {fileID: 5715618496164014530}
+  paintingDone:
+    m_PersistentCalls:
+      m_Calls: []
+  playerInRange:
+    m_PersistentCalls:
+      m_Calls: []
+  playerOutOfRange:
+    m_PersistentCalls:
+      m_Calls: []
   drawingParent: {fileID: 5683555322726905683}

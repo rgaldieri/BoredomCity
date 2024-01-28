@@ -24,8 +24,6 @@ public class DialogueHandler : MonoBehaviour
     public bool isDrawing;
 
     void FixedUpdate(){
-        if(isDrawing)
-            return;
         checkDialogue();
         if(hasNextDialogue() && isActiveDialogue){
             if(timer>0)
@@ -41,22 +39,11 @@ public class DialogueHandler : MonoBehaviour
     {
         interaction = transform.Find("PaintLineInteraction").GetComponent<PaintLineInteraction>();
         interaction.paintingDone.AddListener(() => {paintedDialogue();});
-        LineGenerator.Instance.drawingStarted.AddListener(() => {SetDrawingStarted();});
-        LineGenerator.Instance.drawingEnded.AddListener(() => {SetDrawingEnded();});
         //interaction.playerInRange.AddListener(() => {showDialogue();});
         //interaction.playerOutOfRange.AddListener(() => {closeDialogue();});
         timer = timeForDialogue;
         if(dialogueLines.Length>0)
             activeDialogues = dialogueLines;
-    }
-
-    void SetDrawingStarted(){
-        closeDialogue();
-        isDrawing=true;
-    }
-
-    void SetDrawingEnded(){
-        isDrawing=false;
     }
 
     void resetDialogue(){

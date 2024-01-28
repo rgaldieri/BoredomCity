@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 9195694336716806020}
   - component: {fileID: -2061287224270161815}
   - component: {fileID: 307950470499871007}
+  - component: {fileID: 4264848481297369373}
   m_Layer: 0
   m_Name: Greyling_Weesad
   m_TagString: Untagged
@@ -153,6 +154,27 @@ MonoBehaviour:
   interaction: {fileID: 4692707902612611886}
   isActiveDialogue: 0
   timeForDialogue: 3
+--- !u!135 &4264848481297369373
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518381513979690347}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2519493058793431508
 GameObject:
   m_ObjectHideFlags: 0

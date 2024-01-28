@@ -328,6 +328,8 @@ GameObject:
   - component: {fileID: 8009346032850665392}
   - component: {fileID: 4133644252046432042}
   - component: {fileID: 6196587383643742587}
+  - component: {fileID: 586883126276293793}
+  - component: {fileID: 2363433872246681230}
   m_Layer: 0
   m_Name: Greyling_Hobo
   m_TagString: Untagged
@@ -387,6 +389,48 @@ MonoBehaviour:
   interaction: {fileID: 4376718705929557735}
   isActiveDialogue: 0
   timeForDialogue: 3
+--- !u!135 &586883126276293793
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728064271244584094}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &2363433872246681230
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728064271244584094}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6975688049091963277
 GameObject:
   m_ObjectHideFlags: 0

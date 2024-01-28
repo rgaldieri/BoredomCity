@@ -21,8 +21,6 @@ namespace Unity.FPS.Game
         [Header("Game State")] [Tooltip("The state of the game")]
         public static GameState currentState;
 
-        public GameObject playerObject;
-
         public Camera playerCamera;
 
         [Header("Parameters")] [Tooltip("Duration of the fade-to-black at the end of the game")]

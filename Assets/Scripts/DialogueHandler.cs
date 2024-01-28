@@ -36,8 +36,8 @@ public class DialogueHandler : MonoBehaviour
     {
         interaction = transform.Find("PaintLineInteraction").GetComponent<PaintLineInteraction>();
         interaction.paintingDone.AddListener(() => {paintedDialogue();});
-        interaction.playerInRange.AddListener(() => {showDialogue();});
-        interaction.playerOutOfRange.AddListener(() => {closeDialogue();});
+        //interaction.playerInRange.AddListener(() => {showDialogue();});
+        //interaction.playerOutOfRange.AddListener(() => {closeDialogue();});
         if(dialogueLines.Length>0)
             activeDialogues = dialogueLines;
     }
@@ -79,4 +79,19 @@ public class DialogueHandler : MonoBehaviour
         activeDialogues = dialogueLinesPostPaint;
         activeDialogues[dialogueIndex].enabled = true;
     }
+
+    private void OnTriggerEnter(Collider other){
+        if(other.tag == "Player"){
+            showDialogue();
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other){
+        if(other.tag == "Player" ){
+            closeDialogue();
+        }
+    }
+
+
 }

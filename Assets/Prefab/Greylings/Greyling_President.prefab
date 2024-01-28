@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 6559234678034436619}
   - component: {fileID: 6723928673742469464}
   - component: {fileID: 1398011223218174266}
+  - component: {fileID: 4186098346719087635}
   m_Layer: 0
   m_Name: Greyling_President
   m_TagString: Untagged
@@ -101,6 +102,27 @@ MonoBehaviour:
   interaction: {fileID: 8206466875617693754}
   isActiveDialogue: 0
   timeForDialogue: 3
+--- !u!135 &4186098346719087635
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627263355920898170}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1390993639812312032
 GameObject:
   m_ObjectHideFlags: 0

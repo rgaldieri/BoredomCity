@@ -113,6 +113,11 @@ namespace Unity.FPS.UI
 
         void SetPauseMenuActivation(bool active)
         {
+            if(GameFlowManager.GetGameState() == GameState.drawing)
+            {
+                return;
+            }
+            
             MenuRoot.SetActive(active);
 
             if (MenuRoot.activeSelf)

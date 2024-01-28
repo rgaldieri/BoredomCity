@@ -11067,18 +11067,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 644590536}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &646323145 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1447839283838823259, guid: ee6135b4367b1c342ab301e0e73cf6b1,
-    type: 3}
-  m_PrefabInstance: {fileID: 2756287471253414587}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0930a7b05d030a943bdd6a707799e3ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &647250383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38348,6 +38336,11 @@ PrefabInstance:
       objectReference: {fileID: 1626463081}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
+      propertyPath: paintList.Array.size
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
+        type: 3}
       propertyPath: paintList.Array.data[0]
       value: 
       objectReference: {fileID: 471727975}
@@ -38450,57 +38443,57 @@ PrefabInstance:
         type: 3}
       propertyPath: paintList.Array.data[20]
       value: 
-      objectReference: {fileID: 646323145}
+      objectReference: {fileID: 1701877842}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[21]
       value: 
-      objectReference: {fileID: 1701877842}
+      objectReference: {fileID: 590892070}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[22]
       value: 
-      objectReference: {fileID: 590892070}
+      objectReference: {fileID: 1944127412}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[23]
       value: 
-      objectReference: {fileID: 1944127412}
+      objectReference: {fileID: 1517360856}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[24]
       value: 
-      objectReference: {fileID: 1517360856}
+      objectReference: {fileID: 681962718}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[25]
       value: 
-      objectReference: {fileID: 681962718}
+      objectReference: {fileID: 1312514536}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[26]
       value: 
-      objectReference: {fileID: 1312514536}
+      objectReference: {fileID: 94021680526727460}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[27]
       value: 
-      objectReference: {fileID: 94021680526727460}
+      objectReference: {fileID: 1926442884}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[28]
       value: 
-      objectReference: {fileID: 1926442884}
+      objectReference: {fileID: 1279782662}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[29]
       value: 
-      objectReference: {fileID: 1279782662}
+      objectReference: {fileID: 1540477497}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[30]
       value: 
-      objectReference: {fileID: 1540477497}
+      objectReference: {fileID: 1645248852}
     - target: {fileID: 8335379883680722601, guid: 004fd737616373043805f4778c44bad9,
         type: 3}
       propertyPath: paintList.Array.data[31]

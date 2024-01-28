@@ -18,6 +18,11 @@ namespace Unity.FPS.Game
         [Header("Game State")] [Tooltip("Hud")]
         public static GameObject hud;
 
+        public GameObject  gameOverHud;
+
+        public GameObject  winHud;
+
+
         [Header("Game State")] [Tooltip("The state of the game")]
         public static GameState currentState;
 
@@ -106,11 +111,18 @@ namespace Unity.FPS.Game
         }
 
         public void WinGame(){
-            Debug.Log("Win");
+            invincibility = true;
+            winHud.SetActive(true);
+            hud.SetActive(false);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
 
         public void LoseGame(){
-            Debug.Log("Lost");
+            gameOverHud.SetActive(true);
+            hud.SetActive(false);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
 
         public static void setDrawingState(){

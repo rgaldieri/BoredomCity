@@ -3,6 +3,7 @@ using Unity.FPS.Gameplay;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Unity.FPS.UI
 {
@@ -28,6 +29,8 @@ namespace Unity.FPS.UI
 
         [Tooltip("GameObject for the controls")]
         public GameObject ControlImage;
+
+        public Button exitButton;
 
         PlayerInputHandler m_PlayerInputsHandler;
         Health m_PlayerHealth;
@@ -58,6 +61,9 @@ namespace Unity.FPS.UI
 
             FramerateToggle.isOn = m_FramerateCounter.UIText.gameObject.activeSelf;
             FramerateToggle.onValueChanged.AddListener(OnFramerateCounterChanged);
+
+            exitButton.onClick.AddListener(()=>{mainMenu();});
+
         }
 
         void Update()
@@ -154,5 +160,10 @@ namespace Unity.FPS.UI
         {
             ControlImage.SetActive(show);
         }
+
+        public void mainMenu(){
+            SceneManager.LoadScene("MainMenu");
+        }
+
     }
 }

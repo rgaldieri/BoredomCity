@@ -70,6 +70,7 @@ namespace Unity.FPS.Game
 
         void Start()
         {
+            setActiveState();
             AudioUtility.SetMasterVolume(1);
         } 
 

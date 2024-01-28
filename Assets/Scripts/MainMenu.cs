@@ -18,6 +18,12 @@ public class MainMenu : MonoBehaviour
         exitGame.onClick.AddListener(()=>{ExitGame();});
     }
 
+    void Update(){
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 1f;
+    }
+
     public void StartGame(){
         SceneManager.LoadScene("Level_1");
     }

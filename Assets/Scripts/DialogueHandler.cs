@@ -19,16 +19,17 @@ public class DialogueHandler : MonoBehaviour
     private int dialogueIndex = 0;
 
     public float timeForDialogue;
-    float timer;
+    public float timer;
+
+    public bool isDrawing;
 
     void FixedUpdate(){
+        if(isDrawing)
+            return;
         checkDialogue();
-        // if(!isActiveDialogue){
-        //     return;
-        // }
-        if(hasNextDialogue()){
+        if(hasNextDialogue() && isActiveDialogue){
             if(timer>0)
-                timer = timer-Time.deltaTime;
+                timer = timer-Time.fixedDeltaTime;
             if(timer<=0){
                 timer = timeForDialogue;
                 nextDialogue();
@@ -40,10 +41,22 @@ public class DialogueHandler : MonoBehaviour
     {
         interaction = transform.Find("PaintLineInteraction").GetComponent<PaintLineInteraction>();
         interaction.paintingDone.AddListener(() => {paintedDialogue();});
+        LineGenerator.Instance.drawingStarted.AddListener(() => {SetDrawingStarted();});
+        LineGenerator.Instance.drawingEnded.AddListener(() => {SetDrawingEnded();});
         //interaction.playerInRange.AddListener(() => {showDialogue();});
         //interaction.playerOutOfRange.AddListener(() => {closeDialogue();});
+        timer = timeForDialogue;
         if(dialogueLines.Length>0)
             activeDialogues = dialogueLines;
+    }
+
+    void SetDrawingStarted(){
+        closeDialogue();
+        isDrawing=true;
+    }
+
+    void SetDrawingEnded(){
+        isDrawing=false;
     }
 
     void resetDialogue(){
@@ -67,7 +80,6 @@ public class DialogueHandler : MonoBehaviour
     }
 
     void showDialogue(){
-        timer = timeForDialogue;
         isActiveDialogue = true;
         activeDialogues[dialogueIndex].enabled = true;
     }
@@ -76,7 +88,6 @@ public class DialogueHandler : MonoBehaviour
         isActiveDialogue = false;
         if(activeDialogues!=null)
             activeDialogues[dialogueIndex].enabled = false;
-        resetDialogue();
     }
 
     void paintedDialogue(){

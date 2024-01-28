@@ -327,7 +327,6 @@ GameObject:
   - component: {fileID: 7364319344007881401}
   - component: {fileID: 6351097685522738822}
   - component: {fileID: 3648571055390364251}
-  - component: {fileID: 866238469906090036}
   m_Layer: 0
   m_Name: Greyling_Bodyguard
   m_TagString: Untagged
@@ -385,28 +384,8 @@ MonoBehaviour:
   activeDialogues: []
   interaction: {fileID: 6425995763973309671}
   isActiveDialogue: 0
-  timeForDialogue: 3
---- !u!135 &866238469906090036
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9212955512717742971}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 3.5
-  m_Center: {x: 0, y: 0, z: 0}
+  dialogueRange: 5
+  timeForDialogue: 4
 --- !u!1001 &6898249754168243944
 PrefabInstance:
   m_ObjectHideFlags: 0

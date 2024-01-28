@@ -327,7 +327,6 @@ GameObject:
   - component: {fileID: 7307765226532543866}
   - component: {fileID: 8673587820473936223}
   - component: {fileID: 3599150171479084042}
-  - component: {fileID: 1218567449851930709}
   m_Layer: 0
   m_Name: Greyling_LongDog
   m_TagString: Untagged
@@ -385,28 +384,8 @@ MonoBehaviour:
   activeDialogues: []
   interaction: {fileID: 3433276166433604736}
   isActiveDialogue: 0
-  timeForDialogue: 3
---- !u!135 &1218567449851930709
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8208548896548221438}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 3.5
-  m_Center: {x: 0, y: 0, z: 0}
+  dialogueRange: 5
+  timeForDialogue: 4
 --- !u!1001 &2968799008962901647
 PrefabInstance:
   m_ObjectHideFlags: 0

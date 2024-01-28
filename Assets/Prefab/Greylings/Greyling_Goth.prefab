@@ -211,7 +211,6 @@ GameObject:
   - component: {fileID: 516928565759660015}
   - component: {fileID: -7618389026029975065}
   - component: {fileID: 1425742397561786625}
-  - component: {fileID: -8990031971705698504}
   m_Layer: 0
   m_Name: Greyling_Goth
   m_TagString: Untagged
@@ -269,28 +268,8 @@ MonoBehaviour:
   activeDialogues: []
   interaction: {fileID: 275945559049675324}
   isActiveDialogue: 0
-  timeForDialogue: 3
---- !u!135 &-8990031971705698504
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3346860955020456852}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 3.5
-  m_Center: {x: 0, y: 0, z: 0}
+  dialogueRange: 5
+  timeForDialogue: 4
 --- !u!1 &6503520769597797777
 GameObject:
   m_ObjectHideFlags: 0

@@ -127,7 +127,6 @@ GameObject:
   - component: {fileID: 8300281922473093727}
   - component: {fileID: 1069913389149482019}
   - component: {fileID: 8882391686955621640}
-  - component: {fileID: -3964234254965734404}
   m_Layer: 0
   m_Name: Greyling_Doc
   m_TagString: Untagged
@@ -185,28 +184,8 @@ MonoBehaviour:
   activeDialogues: []
   interaction: {fileID: 6804618493870374428}
   isActiveDialogue: 0
-  timeForDialogue: 3
---- !u!135 &-3964234254965734404
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4401965069091227385}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 3.5
-  m_Center: {x: 0, y: 0, z: 0}
+  dialogueRange: 5
+  timeForDialogue: 4
 --- !u!1 &5319091172130382742
 GameObject:
   m_ObjectHideFlags: 0

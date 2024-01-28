@@ -26,7 +26,7 @@ public class LineGenerator : MonoBehaviour
     public Camera lineCamera;
 
     public Line activeLine;
-
+    
     int numberInLayer = 1;
 
     public float thickness = 0.1f;

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.FPS.Game;
 using UnityEngine;
 
 public class DialogueHandler : MonoBehaviour
@@ -13,15 +14,18 @@ public class DialogueHandler : MonoBehaviour
 
     public bool isActiveDialogue;
 
+    public float dialogueRange;
+
     private int dialogueIndex = 0;
 
     public float timeForDialogue;
     float timer;
 
     void FixedUpdate(){
-        if(!isActiveDialogue){
-            return;
-        }
+        checkDialogue();
+        // if(!isActiveDialogue){
+        //     return;
+        // }
         if(hasNextDialogue()){
             if(timer>0)
                 timer = timer-Time.deltaTime;
@@ -43,7 +47,7 @@ public class DialogueHandler : MonoBehaviour
     }
 
     void resetDialogue(){
-        
+        dialogueIndex = 0;
     }
 
     bool hasNextDialogue(){
@@ -68,30 +72,29 @@ public class DialogueHandler : MonoBehaviour
         activeDialogues[dialogueIndex].enabled = true;
     }
 
-    void closeDialogue(){
+    void closeDialogue(){   
         isActiveDialogue = false;
-        activeDialogues[dialogueIndex].enabled = false;
+        if(activeDialogues!=null)
+            activeDialogues[dialogueIndex].enabled = false;
         resetDialogue();
     }
 
     void paintedDialogue(){
         activeDialogues[dialogueIndex].enabled = false;
+        resetDialogue();
         activeDialogues = dialogueLinesPostPaint;
         activeDialogues[dialogueIndex].enabled = true;
     }
 
-    private void OnTriggerEnter(Collider other){
-        if(other.tag == "Player"){
+    public void checkDialogue(){
+        if(isInDialogueRange()){
             showDialogue();
+            return;
         }
-
+        closeDialogue();
     }
 
-    private void OnTriggerExit(Collider other){
-        if(other.tag == "Player" ){
-            closeDialogue();
-        }
+    public bool isInDialogueRange(){
+        return Vector3.Distance(transform.position, GameFlowManager.INSTANCE.playerCamera.transform.position) <= dialogueRange;
     }
-
-
 }

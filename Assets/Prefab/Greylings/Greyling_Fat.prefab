@@ -327,7 +327,6 @@ GameObject:
   - component: {fileID: 6022533648265707561}
   - component: {fileID: 8110884244316143739}
   - component: {fileID: 5961049493916141230}
-  - component: {fileID: 2571278169106264015}
   m_Layer: 0
   m_Name: Greyling_Fat
   m_TagString: Untagged
@@ -385,28 +384,8 @@ MonoBehaviour:
   activeDialogues: []
   interaction: {fileID: 8823332837533387725}
   isActiveDialogue: 0
-  timeForDialogue: 3
---- !u!135 &2571278169106264015
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8987362099544253744}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 3.5
-  m_Center: {x: 0, y: 0, z: 0}
+  dialogueRange: 5
+  timeForDialogue: 4
 --- !u!1001 &8999598280172337602
 PrefabInstance:
   m_ObjectHideFlags: 0

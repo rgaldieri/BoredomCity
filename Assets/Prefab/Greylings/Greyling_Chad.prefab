@@ -211,7 +211,6 @@ GameObject:
   - component: {fileID: 976246419278196947}
   - component: {fileID: 106802519037317036}
   - component: {fileID: 3396521807271651273}
-  - component: {fileID: 3969076826933462509}
   m_Layer: 0
   m_Name: Greyling_Chad
   m_TagString: Untagged
@@ -269,28 +268,8 @@ MonoBehaviour:
   activeDialogues: []
   interaction: {fileID: 7004775080574824209}
   isActiveDialogue: 0
-  timeForDialogue: 3
---- !u!135 &3969076826933462509
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7816260270802734019}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 3.5
-  m_Center: {x: 0, y: 0, z: 0}
+  dialogueRange: 5
+  timeForDialogue: 4
 --- !u!1 &8609551828598747798
 GameObject:
   m_ObjectHideFlags: 0
